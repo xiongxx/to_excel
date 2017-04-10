@@ -7,7 +7,7 @@ Created on Tue Sep 27 17:52:40 2016
 
 import xlrd, xlwt, re
 
-txtName = r"2016年湖北省饮水不安全户户主信息.txt"
+txtName = r"raw.txt"
 workBook = xlwt.Workbook(encoding = 'ascii')
 workSheet = workBook.add_sheet('sheet1')
 
@@ -38,5 +38,5 @@ for linea in fp.readlines():
        break;
 #workSheet.write(2, 0, 1) 
 
-workBook.save('2016年湖北省饮水不安全户户主信息.xls')
+workBook.save('raw.xls')
 fp.close()

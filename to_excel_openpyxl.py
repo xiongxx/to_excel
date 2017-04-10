@@ -9,7 +9,7 @@ import re
 from openpyxl import Workbook
 
 
-txtName = r"2016年湖北省饮水困难户户主信息.txt"
+txtName = r"raw.txt"
 workBook = Workbook(encoding = 'ascii')
 workSheet = workBook.active
 
@@ -32,5 +32,5 @@ for linea in fp.readlines():
     row +=1
     print("sum =",row)
 
-workBook.save('2016年湖北省饮水困难户户主信息.xls')
+workBook.save('raw.xls')
 fp.close()
